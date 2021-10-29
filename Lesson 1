@@ -1,0 +1,113 @@
+
+코드 <script>는 웹브라우저에게 지금부터는 자바스크립트 코드이기 때문에 이 코드를 해석 할 때는 자바스크립트의 문법에 따라서 해석해서 실행하라고 알려주는 구문(태그)다.
+//참고로 <body> 섹션에다가 쓴다. <style> css는 <head>에 들어가거나 개별 파일 만들어서 링크 걸더라 
+
+숫자 연산
+랜덤 숫자 생성 
+Math.round(100*Math.random()); 
+
+\ Escaping // 다음에 오는 ‘ 나 “ 문자로 인식 
+
+\n 줄 바꿈 
+
+문자길이 (글자 수 구할 떄)  .lenght 
+
+
+'!'는 부정을 의미한다. '같다'의 부정은 '같지 않다'이다. 이것을 기호로는 '!='로 표시한다. 아래의 결과는 !=의 결과인데 ==와 정반대의 결과를 보여준다.
+
+조건문 Conditional Statement Boolean 
+주어진 조건에 따라서 앱을 다르게 동작하도록 함 
+
+    if (true) {
+      alert ('   ');
+    }
+
+if문의 조건이 true라면 if의 중괄호 구간이 실행되고, false라면 else 이후의 중괄호 구간이 실행된다. 즉 else는 주어진 조건이 거짓일 때 실행할 구간을 정의하는 것이다.
+
+else if 
+
+    if(false){
+    alert(1);
+} else if(true){
+    alert(2);
+} else if(true){
+    alert(3);
+} else {
+    alert(4);
+}                   //결과는 3 
+
+  else if 뒤에 false 이면 스킵합 
+  True 라면 실행 및 다음 
+  
+  prompt 유도하다. 
+  
+  alert(prompt('당신의 이름은?'));
+  
+  
+  
+  
+  
+  
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+    <script>
+        var id = prompt ('아이디를 입력하세요.');
+        if (id == 'jssesang') {
+            alert ('올바른 아이디 입니다.');
+            var pw = prompt ('비밀번호를 입력하세요.');
+        } else {
+            alert ('아이디가 틀렸습니다.');
+        }
+            if (pw === "1234") {
+                alert ('로그인 되었습니다.');
+            } else {
+                alert ('로그인에 실패하였습니다.');
+            }
+        
+    </script>
+</body>
+
+
+</html>
+
+
+논리연산자
+  - && (and) 좌항과 우항 모두 참 then True 
+  - || (or) 좌항과 우항 둘 중 하나만 참 then True 
+  
+  
+  <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+    <script>
+        var id = prompt ('아이디를 입력해주세요.');
+        var pw = prompt ('비밀번호를 입력해주세요.');
+        if (id == 'jssesang' && pw == 'Blackak47!') {
+            alert ('로그인 되었습니다.');
+        } else {
+            alert ('로그인에 실패하였습니다.');
+        }
+    </script>
+
+</body>
+
+</html>
+  
+
+  
+  
+
+
+
+
