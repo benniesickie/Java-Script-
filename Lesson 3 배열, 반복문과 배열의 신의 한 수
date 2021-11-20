@@ -9,11 +9,48 @@ for(i = 0; i < members.length; i++){
     document.write('<br />');
     
     
-    
- function get_members(){
-      return ['egoing', 'k8805', 'sorialgi'];
-}
-members = get_members ();
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>For loop and Array</title>
+        <meta charset="UTF-8">
+        <style>
+            .france {
+                color: red;
+            }
+            
+            .one {
+                margin-left: 20px;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <script>
+        function get_argument (){
+            return ['jssesang', 'blackak47', 'm16m4'];
+        }
+
+            var members = get_argument();
+        
+        for (var i =0; i<members.length; i++) {
+           document.write (members[i].toUpperCase() + "<br/>");
+        }
+
+        </script>
+
+
+
+<h1 class="france">olala</h1>
+
+<div class="one">
+    Look at me and Look ar you 
+</div>
+
+
+    </body> 
+</html>
 
 
 
