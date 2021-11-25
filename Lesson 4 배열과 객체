@@ -46,3 +46,65 @@
         </ul>
     </body>
 </html>
+
+
+//객체에는 무엇이 담길 수 있을까?:  객체, 함수 모두 값으로서 객체에 저장 될 수 있다. 
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <title>What can be in Objects?</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+
+        var grades = {
+            'list' : {'bennet':10, 'louisa':11, 'robert':9},
+            'show' : function () {
+                alert ('hello you shit')
+            }
+        }
+
+        alert (grades['show']());
+
+        </script>
+        
+
+    </body>
+</html>
+
+//this 는 함수가 소속 되어있는 객체를 가르킨다. 
+//this.list 조지면 그 객체가 갖고 있는 list라는 객체를 
+
+아래가 바로 객체 지향 프로그래밍 
+'list'와 'show'가 아예 관련이 없으면 안 됨 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <title>What can be in Objects?</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+
+        var grades = {
+            'list' : {'bennet':10, 'louisa':11, 'robert':9},
+            'show' : function () {
+                for (var name in this.list)
+                console.log (name, this.list[name]);
+            }
+        }
+
+        alert (grades['show']());
+        //or alert (grades.show()); 
+
+        </script>
+        
+
+    </body>
+</html>
