@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blabla</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+
+        <ul>
+        <script type="text/javascript">
+
+            fruit = [1,2,3,4,5]; 
+            console.log (fruit[0]); 
+            console.log (fruit.length); 
+            console.log (fruit[fruit.length-1]);
+            console.log (fruit);
+
+            for (i= 0; i<fruit.length; i++){
+               document.write (fruit[i] + "<br/>");
+            }
+
+         var grades = {jssesang:8, blackak47:4, m16m4:7}
+         var property = ['stupid', 'smart', 'arrogant']; 
+
+         document.write( property[0] +"<br/>");
+         document.write(grades.jssesang+"<br/>");
+         document.write( property + "<br/>"); 
+         alert (grades['jssesang']);
+
+         for (i=0; i<property.length; i++) {
+             document.write (property[i] +"<br/>"); 
+         }
+
+
+         for (key in grades){
+             document.write( grades[key] +"<br/>")
+         }
+        
+        
+        for (key in grades){
+            document.write(" key:" + key + " value:" + grades[key] + "<br/>" );
+        }
+
+        </script>
+        </ul>
+    </body>
+</html>
